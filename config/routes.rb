@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+ root 'main#index'
+  get  'main/about'
+  get 'main/contact'
   get 'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
